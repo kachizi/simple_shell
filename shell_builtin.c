@@ -130,7 +130,7 @@ char **replace_aliases(char **args)
 
 	if (_strcmp(args[0], "alias") == 0)
 		return (args);
-	for (ier = 0; args[ier]; ier++)
+	for (iers = 0; args[iers]; iers++)
 	{
 		temper = aliases;
 		while (temper)
@@ -144,9 +144,9 @@ char **replace_aliases(char **args)
 					return (NULL);
 				}
 				_strcpy(new_valer, temper->value);
-				free(args[ier]);
-				args[ier] = new_valer;
-				ier--;
+				free(args[iers]);
+				args[iers] = new_valer;
+				iers--;
 				break;
 			}
 			temper = temper->next;
