@@ -80,7 +80,7 @@ char *error_2_exit(char **args)
 	char *errorer, *hist_str_er;
 	int len_er;
 
-	hist_str_om = _itoa(hist);
+	hist_str_er = _itoa(hist);
 	if (!hist_str_er)
 		return (NULL);
 

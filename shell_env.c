@@ -28,7 +28,7 @@ int shellby_env(char **args, char __attribute__((__unused__)) **front)
 	if (!environ)
 		return (-1);
 
-	for (index_om = 0; environ[index_er]; index_er++)
+	for (index_er = 0; environ[index_er]; index_er++)
 	{
 		write(STDOUT_FILENO, environ[index_er], _strlen(environ[index_er]));
 		write(STDOUT_FILENO, &nc, 1);

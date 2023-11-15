@@ -25,7 +25,7 @@ alias_t *add_alias_end(alias_t **head, char *name, char *value)
 	alias_t *new_node_er = malloc(sizeof(alias_t));
 	alias_t *last;
 
-	if (!new_node_om)
+	if (!new_node_er)
 		return (NULL);
 
 	new_node_er->next = NULL;
